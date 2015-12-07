@@ -1,2 +1,27 @@
 $ git config --global user.name "Your Name"
 $ git config --global user.email "email@example.com"
+
+
+New Project:
+1 new project with eclipse/android studio/vs2012/codeblocks/makefile/sublimetext
+2 git init
+3 git add .
+4 git commit -m "new project,first commit"
+5 onsite github add your repository....  (may you should add your ssh key!)
+6 reference the note:
+	echo "# Improve" >> README.md
+	git add README.md
+	git commit -m "first commit"
+	git remote add origin https://github.com/iofcas/Improve.git              (为版本库添加名为origin的远程版本库)
+	git push -u origin master                                  (把本地库的内容推送到远程，用git push命令，实际上是把当前分支master推送到远程。)
+
+
+
+
+
+
+
+
+Distributed Development:
+1 
+ 
