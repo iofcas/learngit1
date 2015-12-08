@@ -39,7 +39,7 @@ Branch New Function:
 3 mv rm vim modify....that's ok
 4 git commit -m "branch new function ok"
 5 git checkout master
-6 git merge dev
+6 git merge dev  (Fast-forward)
 7 git branch -d dev
 
-if conflict:
+if conflict:(when master is ahead of dev_newfunction_master,no Fast-forward)
