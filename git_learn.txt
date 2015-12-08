@@ -164,3 +164,18 @@ Fetch&Pull:
 4 决策：
 git fetch更安全一些
 因为在merge前，我们可以查看更新情况，然后再决定是否合并
+
+5 git fetch origin branch1:branch2
+  (使用远程branch1分支在本地创建branch2,但不会切换到该分支)
+	如果本地不存在branch2分支, 则会自动创建一个新的branch2分支, 
+	如果本地存在branch2分支, 并且是`fast forward', 则自动合并两个分支, 否则, 会阻止以上操作.
+
+6 git fetch origin master:tmp , git push origin master:dev 
+
+	git fetch origin server:local  从server fetch 到local
+	git push origin local:server   从local  push 到server
+
+
+Diff:
+git diff origin/master (当前版本跟origin/master比较)
+git diff dev (当前版本跟dev版本比较)
