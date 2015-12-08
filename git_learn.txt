@@ -18,21 +18,19 @@ New Project:
 
 
 
-
-
-
 Distributed Development:
 1 git clone https://github.com/iofcas/learngit1.git (git:/ssh:)
-
-
-
 
 
 
 Daily Build:
 1 mv rm vim modify....that's ok
 2 git add -A
-3 git status 
+3 git status   (git diff) 
 4 git commit -m "your build" 
 5 git push -u origin master
- 
+
+
+
+
+Branch New Function:
