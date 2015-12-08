@@ -82,3 +82,28 @@ BUG:
 Del New function with no merge:
 (接到上级命令，因经费不足，新功能必须取消)
 1 git branch -D dev
+
+Dev Branch:
+(创建远程new分支并推送本地dev分支到远程)
+1 git push origin dev:new
+
+
+Version Tag:
+(Git的标签虽然是版本库的快照，但其实它就是指向某个commit的指针)
+1 git tag v1.0 (HEAD)
+2 git tag v0.9 6224937 (git log --pretty=oneline --abbrev-commit)
+3 git tag
+4 git show v0.9
+5 git tag -a v0.1 -m "version 0.1 released" 3628164
+6 git tag -d v0.1
+7 git push origin v1.0
+8 git push origin --tags (push所有分支)
+9 git push origin :refs/tags/v0.9 (删除远程分支)
+
+
+Open Source Join:
+(一定要从自己的账号下clone仓库，这样你才能推送修改。如果从bootstrap的作者的仓库地址git@github.com:twbs/bootstrap.git克隆，因为没有权限，你将不能推送修改。)
+1 fork  
+2 git clone https://...my.git
+3 vim...
+4 pull request
