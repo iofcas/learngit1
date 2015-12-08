@@ -144,3 +144,23 @@ Changes to be committed(has added .):
 (git reset既可以回退版本，也可以把暂存区回退到工作区的修改)
 1 git reset HEAD readme.txt
 
+
+Fetch&Pull:
+( ! [rejected]        master -> master (fetch first))
+1 git fetch origin master  (master:master 中第一个master是origin/master)
+	git fetch origin master
+	git log -p master..origin/master
+	git merge origin/master
+
+2 git fetch origin master:tmp
+	git fetch origin master:tmp
+	git diff tmp 
+	git merge tmp
+
+3 git pull:
+	(相当于git fetch 和 git merge)
+	git pull origin master
+
+4 决策：
+git fetch更安全一些
+因为在merge前，我们可以查看更新情况，然后再决定是否合并
