@@ -34,3 +34,12 @@ Daily Build:
 
 
 Branch New Function:
+1 git branch dev
+2 git checkout dev      1,2<=>git checkout -b dev
+3 mv rm vim modify....that's ok
+4 git commit -m "branch new function ok"
+5 git checkout master
+6 git merge dev
+7 git branch -d dev
+
+if conflict:
